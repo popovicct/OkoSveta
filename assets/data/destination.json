@@ -1,0 +1,325 @@
+[
+    {
+        "id":1,
+        "country":"Italija",
+        "city":"Rim",
+        "price":450,
+        "categoryId":3,
+        "days":4,
+        "firstImage":"assets/img/italija/rim1.jpg",
+        "alt":"Rim",
+        "images":[
+            {
+                "img":"assets/img/italija/rim1.jpg",
+                "altTag":"Rim"
+            },
+            {
+                "img":"assets/img/italija/rim2.jpg",
+                "altTag":"Rim"
+            },
+            {
+                "img":"assets/img/italija/rim3.jpg",
+                "altTag":"Rim"
+            },
+            {
+                "img":"assets/img/italija/rim4.jpg",
+                "altTag":"Rim"
+            },
+            {
+                "img":"assets/img/italija/rim5.jpg",
+                "altTag":"Rim"
+            }
+        ],
+        "travelInfo":{
+            "stayIn":true,
+            "transport":"Autobus",
+            "departure":"Pančevo, Dom omladine",
+            "startTime":"20:00"
+        },
+        "dates":["2026-05-20"],
+        "travelPlan":"Polazak iz Pančeva u večernjim satima ispred Doma omladine. Noćna vožnja kroz Srbiju, Hrvatsku i Sloveniju. Dolazak u Rim u jutarnjim časovima. Obilasci obuhvataju: Koloseum, Forum Romanum, Fontana di Trevi, Španske stepenice, Trg Navona. Slobodno vreme do kraja dana. Sledećeg dana se organizuje obilazak Vatikana ukoliko ima zainteresovanih. Obilazak Vatikana obuhvata: Bazilika Svetog Petra, Muzeji Vatikana i Sikstinska kapela. Slobodno vreme za individualne aktivnosti. Polazak za Pančevo u jutarnjim časovima, posle doručka."
+    },
+    {
+        "id":2,
+        "country":"Španija",
+        "city":"Madrid",
+        "price":570,
+        "categoryId":2,
+        "days":4,
+        "firstImage":"assets/img/spanija/madrid7.jpg",
+        "alt":"Madrid",
+        "images":[
+        
+            {
+                "img":"assets/img/spanija/madrid7.jpg",
+                "altTag":"Madrid"
+            },
+            {
+                "img":"assets/img/spanija/madrid.jpg",
+                "altTag":"Madrid"
+            },
+            {
+                "img":"assets/img/spanija/madrid2.jpg",
+                "altTag":"Madrid"
+            },
+            {
+                "img":"assets/img/spanija/madrid3.jpg",
+                "altTag":"Madrid"
+            },
+            {
+                "img":"assets/img/spanija/madrid4.jpg",
+                "altTag":"Madrid"
+            }
+        ],
+        "travelInfo":{
+            "stayIn": true,
+            "transport":"Autobus",
+            "departure":"Pančevo, Dom omladine",
+            "startTime":"19:30"
+        },
+        "dates":["2026-04-07", "2026-04-17"],
+        "travelPlan":"Polazak iz Pančeva u večernjim satima ispred Doma omladine. Noćna vožnja kroz Srbiju, Hrvatsku i Francusku. Dolazak u Madrid u jutarnjim satima. Obilasci sa vodičem: Trg Mayor, Kraljevska palata, Plaza de España, Obilazak Muzeja Prado i Muzeja Reina Sofia. Slobodno vreme. Polazak u Pančevo u jutarnjim časovima."
+
+    },
+    {
+        "id":3,
+        "country":"Italija",
+        "city":"Rim",
+        "price":90,
+        "categoryId":2,
+        "days":2,
+        "firstImage":"assets/img/italija/rim1.jpg",
+        "alt":"Rim",
+        "images":[
+        
+            {
+                "img":"assets/img/italija/rim1.jpg",
+                "altTag":"Rim"
+            },
+            {
+                "img":"assets/img/italija/rim2.jpg",
+                "altTag":"Rim"
+            },
+            {
+                "img":"assets/img/italija/rim3.jpg",
+                "altTag":"Rim"
+            },
+            {
+                "img":"assets/img/italija/rim4.jpg",
+                "altTag":"Rim"
+            },
+            {
+                "img":"assets/img/italija/rim5.jpg",
+                "altTag":"Rim"
+            }
+        ],
+        "travelInfo":{
+            "stayIn":false,
+            "transport":"Autobus",
+            "departure":"Pančevo, Dom omladine",
+            "startTime":"19:30"
+        },
+        "dates":["2026-04-03", "2026-04-10", "2026-04-18"],
+        "travelPlan":"Polazak iz Pančeva u večernjim satima ispred Doma omladine. Noćna vožnja kroz Srbiju, Hrvatsku i Sloveniju. Dolazak u Rim u jutarnjim časovima. Obilasci obuhvataju: Koloseum, Forum Romanum, Fontana di Trevi, Španske stepenice, Trg Navona. Slobodno vreme. Polazak za Pančevo u popodnevnim časovima."
+
+    },
+    {
+        "id":4,
+        "country":"Rumunija",
+        "city":"Temišvar",
+        "price":25,
+        "categoryId":1,
+        "days":1,
+        "firstImage":"assets/img/rumunija/temisvar.jpg",
+        "alt":"Temišvar",
+        "images":[
+        
+            {
+                "img":"assets/img/rumunija/temisvar.jpg",
+                "altTag":"Temišvar"
+            },
+            {
+                "img":"assets/img/rumunija/temisvar2.jpg",
+                "altTag":"Temišvar"
+            },
+            {
+                "img":"assets/img/rumunija/temisvar3.jpg",
+                "altTag":"Temišvar"
+            },
+            {
+                "img":"assets/img/rumunija/temisvar4.jpg",
+                "altTag":"Temišvar"
+            },
+            {
+                "img":"assets/img/rumunija/temisvar5.jpg",
+                "altTag":"Temišvar"
+            },
+            {
+                "img":"assets/img/rumunija/temisvar6.jpg",
+                "altTag":"Temišvar"
+            }
+        ],
+        "travelInfo":{
+            "stayIn":false,
+            "transport":"Autobus",
+            "departure":"Pančevo, Dom omladine",
+            "startTime":"09:00"
+        },
+        "dates":["2026-03-28", "2026-04-04", "2026-04-11", "2026-04-18"],
+        "travelPlan":"Polazak iz Pančeva u večernjim satima ispred Doma omladine. Obilazak glavnih znamenitosti: Trg Pobede, Katedrala Svetog Đorđa, Operska kuća. Slobodno vreme. Polazak za Pančevo u popodnevnim časovima."
+    },
+    {
+    "id":5,
+    "country":"Rusija",
+    "city":"Moskva",
+    "price":750,
+    "categoryId":4,
+    "days":4,
+    "firstImage":"assets/img/rusija/moskva.jpg",
+    "alt":"Moskva",
+    "images":[
+       
+        {
+            "img":"assets/img/rusija/moskva.jpg",
+            "altTag":"Moskva"
+        },
+        {
+            "img":"assets/img/rusija/moskva2.jpg",
+            "altTag":"Moskva"
+        },
+        {
+            "img":"assets/img/rusija/moskva3.jpg",
+            "altTag":"Moskva"
+        },
+        {
+            "img":"assets/img/rusija/moskva4.jpg",
+            "altTag":"Moskva"
+        },
+        {
+            "img":"assets/img/rusija/moskva5.jpg",
+            "altTag":"Moskva"
+        },
+        {
+            "img":"assets/img/rusija/moskva6.jpg",
+            "altTag":"Moskva"
+        }
+    ],
+     "travelInfo":{
+        "stayIn":true,
+        "transport":"Avion",
+        "departure":"Beograd, aerodrom Nikole Tesle",
+        "startTime":"18:00"
+    },
+    "dates":["2026-04-02", "2026-04-06"],
+    "travelPlan":"Okupljanje putnika na aerodromu Nikola Tesla u 15:30 časova. Sletanje i odlakaz u hotel u kasnim večernjim časovima. Organizovan obilazak grada sa vodičem: Crveni trg, Kremlj, Lenjinov mauzolej i Hram Hrista Spasitelja. Mogućnost fakultativne posete Tretjakovskoj galeriji ili šetnje ulicom Arbat. Odjava iz hotela posle doručka, nakon čega putnici imaju slobodno vreme do 15 časova. Sletanje u Beograd u večernjim časovima."
+
+},
+{
+    "id":6,
+    "country":"Nemačka",
+    "city":"Berlin",
+    "price":180,
+    "categoryId":2,
+    "days":3,
+    "firstImage":"assets/img/nemacka/berlin.jpg",
+    "alt":"Berlin",
+    "images":[
+       
+        {
+            "img":"assets/img/nemacka/berlin.jpg",
+            "altTag":"Berlin"
+        },
+         {
+            "img":"assets/img/nemacka/berlin2.jpg",
+            "altTag":"Berlin"
+        },
+         {
+            "img":"assets/img/nemacka/berlin3.jpg",
+            "altTag":"Berlin"
+        }
+    ],
+     "travelInfo":{
+        "stayIn":true,
+        "transport":"Autobus",
+        "departure":"Pančevo, Dom omladine",
+        "startTime":"17:20"
+    },
+    "dates":["2026-04-05", "2026-04-09", "2026-04-18"],
+    "travelPlan":"Polazak iz Pančeva u popodnevnim satima. Vožnja kroz Hrvatsku, Sloveniju i Austriju. Dolazak u Berlin u prepodnevnim satima. Obilazak grada: Brandenburška kapija, Berlinski zid, Reichstag i Alexanderplatz. Slobodno vreme za šetnju i individualne aktivnosti. Noćenje i organizovan doručak. Slobodno vreme do polaska. Povratak za Srbiju u popodnevnim satima. Noćna vožnja."
+},
+{
+    "id":7,
+    "country":"Nemačka",
+    "city":"Berlin",
+    "price":150,
+    "categoryId":2,
+    "days":2,
+     "firstImage":"assets/img/nemacka/berlin.jpg",
+    "alt":"Berlin",
+    "images":[
+       
+        {
+            "img":"assets/img/nemacka/berlin.jpg",
+            "altTag":"Berlin"
+        },
+         {
+            "img":"assets/img/nemacka/berlin2.jpg",
+            "altTag":"Berlin"
+        },
+         {
+            "img":"assets/img/nemacka/berlin3.jpg",
+            "altTag":"Berlin"
+        }
+    ],
+     "travelInfo":{
+        "stayIn":false,
+        "transport":"Autobus",
+        "departure":"Pančevo, Dom omladine",
+        "startTime":"18:30"
+    },
+    "dates":["2026-03-31"],
+    "travelPlan":"Polazak iz Pančeva u popodnevnim satima. Vožnja kroz Hrvatsku, Sloveniju i Austriju. Dolazak u Berlin u prepodnevnim satima. Obilazak grada: Brandenburška kapija, Berlinski zid, Reichstag i Alexanderplatz. Slobodno vreme. Povratak za Pančevo u popodnevnim časovima, dolazak u prepodnevnim časovima."
+},
+{
+    "id":8,
+    "country":"Nemačka",
+    "city":"Hamburg",
+    "price":240,
+    "categoryId":4,
+    "days":4,
+    "firstImage":"assets/img/nemacka/hamburg.jpg",
+    "alt":"Hamburg",
+    "images":[
+       
+        {
+            "img":"assets/img/nemacka/hamburg.jpg",
+            "altTag":"Hamburg"
+        },
+        {
+            "img":"assets/img/nemacka/hamburg2.jpg",
+            "altTag":"Hamburg"
+        },
+        {
+            "img":"assets/img/nemacka/hamburg3.jpg",
+            "altTag":"Hamburg"
+        },
+        {
+            "img":"assets/img/nemacka/hamburg4.jpg",
+            "altTag":"Hamburg"
+        },
+        {
+            "img":"assets/img/nemacka/hamburg5.jpg",
+            "altTag":"Hamburg"
+        }
+    ],
+     "travelInfo":{
+        "stayIn":true,
+        "transport":"Autobus",
+        "departure":"Pančevo, Dom omladine",
+        "startTime":"Polazak u popodnevnim satima. Noćna vožnja. Dolazak u hotel u prepodnevnim časovima. Obilazak grada: luka, Speicherstadt, centar grada i jezera Alster. Slodobno vreme. Povratak u večernjim časovima."
+    },
+    "dates":["2026-04-27", "2026-04-30"],
+    "travelPlan":""
+
+}
+]

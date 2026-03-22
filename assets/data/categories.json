@@ -1,0 +1,18 @@
+[
+    {
+        "id":1,
+        "name":"Jednodnevno putovanje"
+    },
+    {
+        "id":2,
+        "name":"Višednevno putovanje"
+    },
+    {
+        "id":3,
+        "name":"First minute"
+    },
+     {
+        "id":4,
+        "name":"Last minute"
+    }
+]

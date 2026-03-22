@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+        <title>Oko sveta | Kontakt</title>
+    </head>
+    <body>
+    <div id="container" class="container-fluid px-0">
+        <nav class="navigation navbar navbar-expand-lg justify-content-between w-100 addColor navbar-dark"></nav>
+        
+        <div id="contactInfo" class="row mt-5 mb-4 d-flex ">
+            
+            <form action="#" method="get" id="formContact" class="col-lg-5 col-sm-11 ms-4">
+                <h3>Postavite nam pitanje:</h3>
+                <div class="form-group d-flex flex-column justify-content-start mb-3">
+                        <label for="inputName">Ime i prezime *</label>
+                        <input type="text" id="inputName" name="name" placeholder="Primer: Petar Petrović" class="defaultInput col-lg-8 col-11 rounded-3" required/>
+                        <div id="nameFeedback" class="feedback d-flex mt-1"></div>
+                </div>
+                <div class="form-group d-flex flex-column justify-content-start mb-3">
+                        <label for="inputMail">Email *</label>
+                        <input type="email" id="inputMail" name="mail" placeholder="Primer: petar@gmail.com" class="defaultInput col-lg-8 col-11 rounded-3" required/>
+                        <div id="mailFeeedback" class="feedback d-flex  mt-1"></div>
+                </div>
+                <div class="form-group d-flex flex-column justify-content-start mb-3">
+                        <label for="messageContact">Poruka *</label>
+                        <textarea id="messageContact" name="message" placeholder="Poruka mora da sadrži minimum 10 karaktera..."  class="defaultInput col-lg-8 col-11 rounded-3" required></textarea>
+                        <div id="messageFeedbackContact" class="feedback d-flex  mt-1"></div>
+                </div>
+                <button type="submit" id="submitContact" class="btn text-white rounded-3 btn-read-more mt-3 mb-4  col-lg-3 col-5">Pošalji</button>
+                <div id="toastMessage"></div>
+            </form>
+            <div id="howToBook" class="col-lg-5 col-11 ms-4">
+                <div id="bookingInfo">
+                    <h3>Kako da se prijavim na putovanje?</h3>
+                    <p>Pozivom na broj: 62879564</p>
+                    <p>Popunjavanjem prijave na sajtu. Sve što treba da uradite je da kada odaberete ponudu kliknete na 'Prijavi me' i popunite prijavu</p>
+                    <p>Dolaskom u agenciju</p><br/>
+                
+                    <h3>Informacije:</h3>
+                    <p>Adresa: Braće Jovanovića 9, Pančevo</p>
+                    <p>Email: okosveta@gmail.com</p>
+                    <p>Telefon: 62879564</p>
+                    <p>Ponedeljak-subota: 09h-18h</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <footer class="d-flex flex-column"></footer>
+     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    </body>
+</html>
