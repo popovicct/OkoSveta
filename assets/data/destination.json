@@ -316,10 +316,10 @@
         "stayIn":true,
         "transport":"Autobus",
         "departure":"Pančevo, Dom omladine",
-        "startTime":"Polazak u popodnevnim satima. Noćna vožnja. Dolazak u hotel u prepodnevnim časovima. Obilazak grada: luka, Speicherstadt, centar grada i jezera Alster. Slodobno vreme. Povratak u večernjim časovima."
+        "startTime":"17:20"
     },
     "dates":["2026-04-27", "2026-04-30"],
-    "travelPlan":""
+    "travelPlan":"Polazak u popodnevnim satima. Noćna vožnja. Dolazak u hotel u prepodnevnim časovima. Obilazak grada: luka, Speicherstadt, centar grada i jezera Alster. Slodobno vreme. Povratak u večernjim časovima."
 
 }
 ]
