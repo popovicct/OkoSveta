@@ -1,18 +1,21 @@
-// dodaj sadržaj u json
-
 //alert("ok");
 let categories=[];
 let destinations=[];
 let favourites=[];
- let getDestination=[];
+let getDestination=[];
 const FAVOURITES="favourite_offer";
 let categoriesReady=false;
 let destinationReady=false;
 let isActive=false;
-let perPage=4;  /////////////////////////////////////////////////////////////////////////////////////////////////////////// PPROMENI OVAJ BROJ
+let perPage=12; 
 
-const nav=["Početna", "Ponude", "Kontakt", "Autor"];
-const navLinks=["index.html", "offers.html", "contact.html", "author.html"];
+const nav=[
+    {"name":"Početna", "link":"index.html"},
+    {"name":"Ponude", "link":"offers.html"},
+    {"name":"Kontakt", "link":"contact.html"},
+    {"name":"Autor", "link":"author.html"},
+    {"name":"Zip", "link":"okoSveta.zip"},
+];
 const countryImage=["assets/img/rusija22.jpeg","assets/img/italija22.jpeg","assets/img/turska22.jpeg","assets/img/portugal22.jpeg"];
 const countryImagesAlt=["rusija", "italija", "turska", "portugal"];
 var logoImage="assets/img/logo1.png"; 
@@ -78,8 +81,6 @@ function loadCategories(){
     });
 }
 
-
-
 function renderIfReady(){
     if(destinationReady && categoriesReady){
         cleanFavourites();
@@ -96,12 +97,8 @@ function renderIfReady(){
         if($("#infoDestination").length){
             showBookingInfo();
         }
-        
-       //renderAllOffers(destinations);
-       //pagination(1);
     }
 }          
-
 
 function hamburger(){
     let navHtml = `
@@ -113,27 +110,25 @@ function hamburger(){
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="glavniMeni">
-                ${renderMenu(nav, navLinks, false)}
+                ${renderMenu(nav, false)}
             </div>
         </div>`;
     
     $(".navigation").html(navHtml);
 }
 
-function renderMenu(nav, navLinks, isFooter){
+function renderMenu(nav, isFooter){
     let listClass = isFooter ? "footer-nav-list" : "navbar-nav";
     let linkClass = isFooter ? "footer-link" : "nav-link";
     let html=`<ul class="${listClass}">`
     for(let i=0;i<nav.length;i++){
         html+=`
-            <li class="nav-item"><a href="${navLinks[i]}" class="${linkClass}">${nav[i]}</a></li>
+            <li class="nav-item"><a href="${nav[i].link}" class="${linkClass}" ${nav[i].name=="Zip" ? "download" : ""}>${nav[i].name}</a></li>
           `
     }
     html+=`</ul>`
     return html;
 }
-
-
 
 // formatiranje datuma
 function formatDate(dates){ 
@@ -166,7 +161,7 @@ function showFooter(){
                 <p class="mt-3 mb-1">Turistička agencija</p>
                 <p>"Oko sveta"</p>
             </article>
-            <article class="col-lg-3 col-11 d-flex flex-column justify-content-center align-items-center">${renderMenu(nav, navLinks, true)}</article>
+            <article class="col-lg-3 col-11 d-flex flex-column justify-content-center align-items-center">${renderMenu(nav, true)}</article>
             <article id="footer-contact" class="col-lg-3 col-11 d-flex flex-column justify-content-center align-items-center">
                 <h3>Kontaktirajte nas</h3>
                 <div class="d-flex gap-2"><i class="fa-solid fa-phone mt-1"></i><p>628745963</p></div>
@@ -189,7 +184,7 @@ function renderAllOffers(destinations, element){
     destinations.forEach(d=>{
         let mapDates=d.dates.map(dates=>formatDate(dates)).join(" | ");
         let cat=categories.find(c=>c.id==d.categoryId);
-        let addOrRemove=favourites.includes(d.id)? `<i class="fa-solid fa-heart fa-lg"></i>` : `<i class="fa-regular fa-heart fa-lg"></i>`;
+        let addOrRemove=favourites.includes(d.id)? `<i class="fa-solid fa-heart fa-lg"></i> Ukloni iz omiljenog` : `<i class="fa-regular fa-heart fa-lg"></i> Dodaj u omiljeno`;
         html+=`
         <div class="col-lg-3 col-md-6 col-12 d-flex">
             <div class="d-flex flex-column cardTopOffer h-100">
@@ -200,8 +195,8 @@ function renderAllOffers(destinations, element){
                     <p class="fs-5 mt-3 mb-1">${cat.name} - ${d.days==1?`${d.days} dan`: `${d.days} dana`} </p>
                     <p class="fs-5">Datum: ${mapDates}</p>
                     <h4>${d.price} €</h4>
-                    <div class="addToFavourites fs-5" data-id="${d.id}">${addOrRemove} Dodaj u omiljeno</div>
-                    <a href="details.html?id=${d.id}" class="text-white text-decoration-none d-inline-block pb-2 mt-2 fs-5">Detalji</a>
+                    <div class="addToFavourites fs-5" data-id="${d.id}">${addOrRemove}</div>
+                    <a href="details.html?id=${d.id}" target="_blank" class="text-white text-decoration-none d-inline-block pb-2 mt-2 fs-5">Detalji</a>
                 </div>
             </div>
         </div>
@@ -248,7 +243,6 @@ function allFilters(){
         getDestination=getDestination.filter(d=>d.country==filterCountry);
     }
     
-
     //filtriranje ponuda po kategoriji
     const filterCategory=$("#filterCategory").val();
     if(filterCategory!="all"){
@@ -266,6 +260,7 @@ function allFilters(){
         break;
         case "default": break;                
     }
+
     // filtriranje po datumu
     const selectedDate=$("#dateOffer").val();
     if(selectedDate){
@@ -276,7 +271,20 @@ function allFilters(){
         getDestination=getDestination.filter(d=>favourites.includes(d.id));
     }
 
-    pagination(1);
+    if(getDestination==0){
+        let html=`<h4>Nema rezultata</h4>`
+        $("#allOffers").html(html);
+        return;    
+    }
+
+    let savedPage=localStorage.getItem("currentPage");
+    let pag=savedPage ? parseInt(savedPage) : 1;
+
+    let totalPage=Math.ceil(getDestination.length/perPage);
+    if(pag>totalPage){
+        pag=1;
+    }
+    pagination(pag);
 }
 
 function getFavourites(){
@@ -291,9 +299,7 @@ function getFavourites(){
     }
     catch(error){
         console.error("Greška. ", error.message);
-    }
-    
-    
+    } 
 }
 
 function setFavourites(){   
@@ -301,18 +307,15 @@ function setFavourites(){
 }
 
 function addToFavourites(idFav, el){     //id destinacije prosleđujemo
-   // getFavourites();
     if(favourites.includes(idFav)){
         favourites=favourites.filter(x=>x!=idFav);
     }
     else{
-       // let index=favourites.indexOf(idKojiDobijemo)
         favourites.push(idFav);
     }
     setFavourites();
     favInfo();
 }
-
 
 $(document).on("click", ".addToFavourites", function(){
     console.log("klik");
@@ -334,7 +337,6 @@ $("#showFav").on("click", function(){
 })
 
 function favInfo(){
-    
     let heartIcon=favourites.length>0 ? `<i class="fa-solid fa-heart fa-lg"></i>` : `<i class="fa-regular fa-heart fa-lg"></i>`;
     $("#heart").html(heartIcon);
 
@@ -354,6 +356,7 @@ function cleanFavourites() {
 
 //paginacija
 function pagination(page){
+    localStorage.setItem("currentPage", page);
     let start=(page-1)*perPage;
     let end=start+perPage;
     let renderPerPage=getDestination.slice(start, end);
@@ -379,7 +382,7 @@ let startImg=0;
 let detail;
 
 function showDetails(){
-    try{
+try{
 let html="";
 let parametar=new URLSearchParams(window.location.search);
 let detailsId=parametar.get("id");
@@ -422,7 +425,7 @@ html+=`
                     <p>Načini plaćanja: plaćanje gotovinom, karticom (Visa, MasterCard, DinaCard i Maestro kartice), online plaćanje</p>
                     <p>Plaćanje se vrši najkasnije 48 sati pre putovanja. Ukoliko uplata nije izršena u navedenom roku smatra se da je putnik odustao od prijave. Ako je uplata izvršena u krajnjem roku potrebno je poslati dokaz o uplati, kako biste zadržali svoju rezervaciju zbog potencijalnog kašnjenja platnog prometa. Cena putovanja iskazana je u evrima, a plaćanje je u dinarskoj protivvrednosti, po srednjem kursu Narodne Banke Srbije, na dan uplate. </p>
 				</div>
-				<a href="booking.html?id=${detail.id}" class="btn text-white rounded-pill btn-read-more mt-5 col-lg-3 col-5">Prijavi se</a>
+				<a href="booking.html?id=${detail.id}" target="_blank" class="btn text-white rounded-pill btn-read-more mt-5 col-lg-3 col-5">Prijavi se</a>
 			</div>
 		</div>
 `;
@@ -432,9 +435,9 @@ else {
 }
 $("#detailPage").html(html);
     }
-    catch(error){
+catch(error){
         console.error("Greška na details stranici:", error.message);
-    }
+}
 
 }
 
@@ -511,7 +514,7 @@ function checkMessage(textarea, feedback, required){
     let messageValue=textarea.val();
 
     if(!required){
-        return true; //polje nije obavezno, nema nikakve kriterijume pa će uvek vraćati true
+        return true; //polje nije obavezno, ne proveravam unos
     }
     if(required && messageValue.length>=10){
         feedback.html(`<i class="fa-solid fa-circle-check"></i>`).css('color', '#0a9905')
@@ -567,8 +570,6 @@ function checkCheckbox(){
         return false;
     }
 }
-// $("#choseDate").on("blur", isSelected);
-
 
 $("#submitContact").on("click", function(e){
     e.preventDefault();
@@ -598,7 +599,6 @@ $("#submitBooking").on("click", function(e){
     let isPhone=checkPhone($("#phone"), $("#phoneFeeedback"));
     let isCheck=checkCheckbox();
     let isRadio=checkRadio();
-    //let isDate=isSelected();
 
     if(isName && isMail && isMessage && isPhone && isCheck && isRadio){
         $("#bookingForm")[0].reset();
@@ -618,7 +618,6 @@ $("#submitBooking").on("click", function(e){
        }, 3000)
     }
 })
-
 
 function showBookingInfo(){
     try{
@@ -649,7 +648,5 @@ function showBookingInfo(){
     catch(error){
         console.error("Greška.", error.message);
     }
-  
-   
 }
 

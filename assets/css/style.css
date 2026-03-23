@@ -186,7 +186,6 @@ footer{
     padding: 12px;
 }
 
-
 #arrows{
 	position:absolute;
 	z-index:5;
@@ -202,11 +201,6 @@ footer{
 
 #forms{
     border: 1px solid red;
-}
-
-#autor{
-    text-align: center;
-    padding: 50px;
 }
 
 #messageBooking{

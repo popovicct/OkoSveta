@@ -249,6 +249,47 @@
 },
 {
     "id":7,
+    "country":"Francuska",
+    "city":"Pariz",
+    "price":440,
+    "categoryId":4,
+    "days":5,
+    "firstImage":"assets/img/francuska/pariz.jpg",
+    "alt":"Pariz",
+    "images":[
+       
+        {
+            "img":"assets/img/francuska/pariz.jpg",
+            "altTag":"Pariz"
+        },
+         {
+            "img":"assets/img/francuska/pariz6.jpg",
+            "altTag":"Pariz"
+        },
+         {
+            "img":"assets/img/francuska/pariz2.jpg",
+            "altTag":"Pariz"
+        },
+         {
+            "img":"assets/img/francuska/pariz3.jpg",
+            "altTag":"Pariz"
+        },
+         {
+            "img":"assets/img/francuska/pariz4.jpg",
+            "altTag":"Pariz"
+        }
+    ],
+     "travelInfo":{
+        "stayIn":true,
+        "transport":"Avion",
+        "departure":"Beograd, aerodrom Nikole Tesle",
+        "startTime":"09:00"
+    },
+    "dates":["2026-04-05"],
+    "travelPlan":"Polazak sa aerodroma “Nikola Tesla” u 11:00 časova. Okupljanje putnika u 09:00. Dolazak u Pariz i transfer do hotela. Organizovan obilazak grada: Ajfelov toranj, Trijumfalna kapija i Šanzelize. Obilazak Luvra (po izboru) i šetnja Monmartrom – umetnički kvart sa pogledom na grad. Fakultativne izlete: krstarenje rekom Senomi izlet do Versaja. Slobodno vreme. Napuštanje hotela posle doručka i povratak u Beograd u popodnevnim časovima. Napomena: last minute cena važi do popune mesta. Cena uključuje avionski prevoz, transfer, hotel i doručak"
+},
+{
+    "id":8,
     "country":"Nemačka",
     "city":"Berlin",
     "price":150,
@@ -281,18 +322,18 @@
     "travelPlan":"Polazak iz Pančeva u popodnevnim satima. Vožnja kroz Hrvatsku, Sloveniju i Austriju. Dolazak u Berlin u prepodnevnim satima. Obilazak grada: Brandenburška kapija, Berlinski zid, Reichstag i Alexanderplatz. Slobodno vreme. Povratak za Pančevo u popodnevnim časovima, dolazak u prepodnevnim časovima."
 },
 {
-    "id":8,
+    "id":9,
     "country":"Nemačka",
     "city":"Hamburg",
     "price":240,
     "categoryId":4,
     "days":4,
-    "firstImage":"assets/img/nemacka/hamburg.jpg",
+    "firstImage":"assets/img/nemacka/hamburg1.jpg",
     "alt":"Hamburg",
     "images":[
        
         {
-            "img":"assets/img/nemacka/hamburg.jpg",
+            "img":"assets/img/nemacka/hamburg1.jpg",
             "altTag":"Hamburg"
         },
         {
@@ -320,6 +361,267 @@
     },
     "dates":["2026-04-27", "2026-04-30"],
     "travelPlan":"Polazak u popodnevnim satima. Noćna vožnja. Dolazak u hotel u prepodnevnim časovima. Obilazak grada: luka, Speicherstadt, centar grada i jezera Alster. Slodobno vreme. Povratak u večernjim časovima."
-
+},
+{
+    "id":10,
+    "country":"Austrija",
+    "city":"Grac",
+    "price":75,
+    "categoryId":1,
+    "days":1,
+    "firstImage":"assets/img/austrija/grac.jpg",
+    "alt":"Grac",
+    "images":[
+       
+        {
+            "img":"assets/img/austrija/grac.jpg",
+            "altTag":"Grac"
+        },
+        {
+            "img":"assets/img/austrija/grac2.jpg",
+            "altTag":"Grac"
+        },
+        {
+            "img":"assets/img/austrija/grac3.jpg",
+            "altTag":"Grac"
+        },
+        {
+            "img":"assets/img/austrija/grac4.jpg",
+            "altTag":"Grac"
+        }
+    ],
+     "travelInfo":{
+        "stayIn":false,
+        "transport":"Autobus",
+        "departure":"Pančevo, Dom omladine",
+        "startTime":"07:00"
+    },
+    "dates":["2026-04-06", "2026-04-09", "2026-04-03", "2026-04-17"],
+    "travelPlan":"Polazak iz Pančeva u ranim jutarnjim satima. Vožnja kroz Srbiju i Sloveniju. Dolazak u Grac u prepodnevnim satima. Šetnja kroz stari deo grada, Trg Glavni (Hauptplatz), Katedrala Svetog Egidija, Schlossberg i časovnik sa pogledom na grad. Slobodno vreme. Polazak za Pančevo u popodnevnim satima. Dolazak u večernjim satima."
+},
+{
+    "id":11,
+    "country":"Austrija",
+    "city":"Halštat",
+    "price":85,
+    "categoryId":2,
+    "days":2,
+    "firstImage":"assets/img/austrija/halstat.jpg",
+    "alt":"Halštat",
+    "images":[
+        {
+            "img":"assets/img/austrija/halstat.jpg",
+            "altTag":"Halštat"
+        },
+         {
+            "img":"assets/img/austrija/halstat2.jpg",
+            "altTag":"Halštat"
+        },
+         {
+            "img":"assets/img/austrija/halstat3.jpg",
+            "altTag":"Halštat"
+        },
+         {
+            "img":"assets/img/austrija/halstat4.jpg",
+            "altTag":"Halštat"
+        }
+    ],
+     "travelInfo":{
+        "stayIn":false,
+        "transport":"Autobus",
+        "departure":"Pančevo, Dom omladine",
+        "startTime":"17:30"
+    },
+    "dates":["2026-04-22", "2026-04-28"],
+    "travelPlan":"Polazak iz Pančeva u popodnevnim satima. Noćna vožnja kroz Srbiju, Hrvatsku i Sloveniju. Dolazak u Halštat u jutarnjim satima. Obilazak sa vodičem: jezero Halštat, stari deo sela, vidikovac „Skywalk“ sa panoramskim pogledom. Slobodno vreme. Polazak za Srbiju u popodnevnim satima. Dolazak u Pančevo u večernjim satima."
+},
+{
+    "id":12,
+    "country":"Grčka",
+    "city":"Solun",
+    "price":150,
+    "categoryId":2,
+    "days":3,
+    "firstImage":"assets/img/grcka/solun.jpg",
+    "alt":"Solun",
+    "images":[
+       
+          {
+            "img":"assets/img/grcka/solun.jpg",
+            "altTag":"Solun"
+        },
+         {
+            "img":"assets/img/grcka/solun2.jpg",
+            "altTag":"Solun"
+        },
+         {
+            "img":"assets/img/grcka/solun3.jpg",
+            "altTag":"Solun"
+        },
+         {
+            "img":"assets/img/grcka/solun4.jpg",
+            "altTag":"Solun"
+        },
+         {
+            "img":"assets/img/grcka/solun6.jpg",
+            "altTag":"Solun"
+        }
+    ],
+     "travelInfo":{
+        "stayIn":true,
+        "transport":"Autobus",
+        "departure":"Pančevo, Dom omladine",
+        "startTime":"15:30"
+    },
+    "dates":["2026-04-19"],
+    "travelPlan":"Polazak iz Pančeva u popodnevnim satima, noćna vožnja, dolazak u Solun u jutarnjim satima.bilazak Bele kule, Trga Aristotela, Rotonde, Galerijevog slavoluka i crkve Svetog Dimitrija. Slobodno vreme. Polazak za Pančevo u popodnevnim satima trećeg dana i dolazak u večernjim satima."
+},
+{
+    "id":13,
+    "country":"Austrija",
+    "city":"Beč",
+    "price":120,
+    "categoryId":2,
+    "days":2,
+    "firstImage":"assets/img/austrija/bec.jpg",
+    "alt":"Beč",
+    "images":[
+       
+        {
+            "img":"assets/img/austrija/bec.jpg",
+            "altTag":"Beč"
+        },
+        {
+            "img":"assets/img/austrija/bec2.jpg",
+            "altTag":"Beč"
+        },
+        {
+            "img":"assets/img/austrija/bec3.jpg",
+            "altTag":"Beč"
+        },
+        {
+            "img":"assets/img/austrija/bec4.jpg",
+            "altTag":"Beč"
+        }
+    ],
+     "travelInfo":{
+        "stayIn":false,
+        "transport":"Autobus",
+        "departure":"Pančevo, Dom omladine",
+        "startTime":"20:30"
+    },
+    "dates":["2026-04-26","2026-05-01", "2026-05-04"],
+    "travelPlan":"Polazak iz Pančeva u večernjim satima. Noćna vožnja kroz Srbiju i Mađarsku. Dolazak u Beč ujutru. Obilazak grada: Dvorac Šenbrun, Katedrala Svetog Stjepana, Ringstrasse, Gradska kuća. Slobodno vreme. Polazak za Pančevo u popodnevnim satima. Dolazak u večernjim satima."
+},
+{
+    "id":14,
+    "country":"Bugarska",
+    "city":"Sofija",
+    "price":60,
+    "categoryId":1,
+    "days":1,
+    "firstImage":"assets/img/bugarska/sofija.jpg",
+    "alt":"Sofija",
+    "images":[
+        {
+            "img":"assets/img//bugarska/sofija.jpg",
+            "altTag":"sofija"
+        },
+         {
+            "img":"assets/img//bugarska/sofija2.jpg",
+            "altTag":"sofija"
+        },
+         {
+            "img":"assets/img//bugarska/sofija3.jpg",
+            "altTag":"sofija"
+        }
+    ],
+     "travelInfo":{
+        "stayIn":false,
+        "transport":"Autobus",
+        "departure":"Pančevo, Dom omladine",
+        "startTime":"07:20"
+    },
+    "dates":["2026-04-15", "2026-04-30", "2026-05-02"],
+    "travelPlan":"Polazak iz Pančeva u ranim jutarnjim satima. Dolazak u Sofiju u prepodnevnim satima. Organizovan obilazak grada: Aleksandar Nevskog – impozantna pravoslavna katedrala, Trg Nezavisnosti i Narodno pozorište. Slobodno vreme. Polazak za Pančevo u popodnevnim satima. Dolazak u ranim večernjim satima."
+},
+{
+    "id":15,
+    "country":"Austrija",
+    "city":"Beč",
+    "price":170,
+    "categoryId":3,
+    "days":4,
+    "firstImage":"assets/img/austrija/bec.jpg",
+    "alt":"Beč",
+    "images":[
+       
+        {
+            "img":"assets/img/austrija/bec.jpg",
+            "altTag":"Beč"
+        },
+        {
+            "img":"assets/img/austrija/bec2.jpg",
+            "altTag":"Beč"
+        },
+        {
+            "img":"assets/img/austrija/bec3.jpg",
+            "altTag":"Beč"
+        },
+        {
+            "img":"assets/img/austrija/bec4.jpg",
+            "altTag":"Beč"
+        }
+    ],
+     "travelInfo":{
+        "stayIn":true,
+        "transport":"Autobus",
+        "departure":"Pančevo, Dom omladine",
+        "startTime":"20:15"
+    },
+    "dates":["2026-06-20","2026-06-26"],
+    "travelPlan":"Polazak iz Pančeva u večernjim satima. Noćna vožnja kroz Srbiju i Mađarsku. Dolazak u Beč ujutru. Dolazak u Beč u jutarnjim satima. Organizovan obilazak grada sa vodičem: dvorac Šenbrun i vrtovi, katedrala Svetog Stjepana, gradski bulevar, Gradska kuća i Parlament. Obilazak muzeja ili kulturnih znamenitosti ukoliko ima zainetesovanih putnika. Slobodno vreme. Polazak za Pančevo u popodnevnim satima. Dolazak u večernjim satima."
+},
+{
+    "id":16,
+    "country":"Grčka",
+    "city":"Solun",
+    "price":50,
+    "categoryId":1,
+    "days":1,
+    "firstImage":"assets/img/grcka/solun.jpg",
+    "alt":"Solun",
+    "images":[
+       
+        {
+            "img":"assets/img/grcka/solun.jpg",
+            "altTag":"Solun"
+        },
+         {
+            "img":"assets/img/grcka/solun2.jpg",
+            "altTag":"Solun"
+        },
+         {
+            "img":"assets/img/grcka/solun3.jpg",
+            "altTag":"Solun"
+        },
+         {
+            "img":"assets/img/grcka/solun4.jpg",
+            "altTag":"Solun"
+        },
+         {
+            "img":"assets/img/grcka/solun6.jpg",
+            "altTag":"Solun"
+        }
+    ],
+     "travelInfo":{
+        "stayIn":false,
+        "transport":"Autobus",
+        "departure":"Pančevo, Dom omladine",
+        "startTime":"07:30"
+    },
+    "dates":["2026-03-29", "2026-04-09", "2026-04-15"],
+    "travelPlan":"Polazak iz Pančeva u jutarnjim satima. Organizovan obilazak grada:Trg Aristotela, Bijela kula, Riva – šetalište uz more. Slobodno vreme. Polazak za Pančevo u popodnevnim satima. Dolazak u večernjim satima."
 }
+
 ]
