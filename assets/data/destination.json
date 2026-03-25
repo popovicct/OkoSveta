@@ -165,7 +165,7 @@
             "departure":"Pančevo, Dom omladine",
             "startTime":"09:00"
         },
-        "dates":["2026-03-28", "2026-04-04", "2026-04-11", "2026-04-18"],
+        "dates":["2026-04-17", "2026-04-24", "2026-04-30"],
         "travelPlan":"Polazak iz Pančeva u večernjim satima ispred Doma omladine. Obilazak glavnih znamenitosti: Trg Pobede, Katedrala Svetog Đorđa, Operska kuća. Slobodno vreme. Polazak za Pančevo u popodnevnim časovima."
     },
     {
@@ -318,7 +318,7 @@
         "departure":"Pančevo, Dom omladine",
         "startTime":"18:30"
     },
-    "dates":["2026-03-31"],
+    "dates":["2026-04-06"],
     "travelPlan":"Polazak iz Pančeva u popodnevnim satima. Vožnja kroz Hrvatsku, Sloveniju i Austriju. Dolazak u Berlin u prepodnevnim satima. Obilazak grada: Brandenburška kapija, Berlinski zid, Reichstag i Alexanderplatz. Slobodno vreme. Povratak za Pančevo u popodnevnim časovima, dolazak u prepodnevnim časovima."
 },
 {
@@ -620,8 +620,45 @@
         "departure":"Pančevo, Dom omladine",
         "startTime":"07:30"
     },
-    "dates":["2026-03-29", "2026-04-09", "2026-04-15"],
+    "dates":["2026-04-01", "2026-04-09", "2026-04-15"],
     "travelPlan":"Polazak iz Pančeva u jutarnjim satima. Organizovan obilazak grada:Trg Aristotela, Bijela kula, Riva – šetalište uz more. Slobodno vreme. Polazak za Pančevo u popodnevnim satima. Dolazak u večernjim satima."
+},
+{
+    "id":17,
+    "country":"Turska",
+    "city":"Istanbul",
+    "price":450,
+    "categoryId":2,
+    "days":3,
+    "firstImage":"assets/img/turska/istanbul.jpg",
+    "alt":"Istanbul",
+    "images":[
+       
+        {
+            "img":"assets/img/turska/istanbul.jpg",
+            "altTag":"Istanbul"
+        },
+         {
+            "img":"assets/img/turska/istanbul2.jpg",
+            "altTag":"Istanbul"
+        },
+         {
+            "img":"assets/img/turska/istanbul3.jpg",
+            "altTag":"Istanbul"
+        },
+         {
+            "img":"assets/img/turska/istanbul4.jpg",
+            "altTag":"Istanbul"
+        }
+    ],
+     "travelInfo":{
+        "stayIn":true,
+        "transport":"Avion",
+        "departure":"Beograd, aerodrom Nikole Tesle",
+        "startTime":"09:30"
+    },
+    "dates":["2026-04-29", "2026-05-09", "2026-05-15"],
+    "travelPlan":"Polazak sa aerodroma u jutarnjim satima. Okupljanje u 08:30. Dolazak u Istanbul, transfer do hotela i smeštaj. Organizovan obilazak grada: Aja Sofija, Plava džamija, Hipodrom i Topkapi palata. Slobodno vreme. Povratak za Beograd u popodnevnim časovima."
 }
 
 ]

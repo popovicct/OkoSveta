@@ -166,13 +166,11 @@ function showFooter(){
                 <h3>Kontaktirajte nas</h3>
                 <div class="d-flex gap-2"><i class="fa-solid fa-phone mt-1"></i><p>628745963</p></div>
                 <div class="d-flex gap-2"><i class="fa-solid fa-envelope mt-1"></i><p>okosveta@gmail.com</p></div>
-                <div class="d-flex gap-2"> <i class="fa-solid fa-location-dot mt-1"></i> <p>Braće Jovanovovića, Pančevo</p></div>
+                <div class="d-flex gap-2"> <i class="fa-solid fa-location-dot mt-1"></i> <p>Braće Jovanovića 9, Pančevo</p></div>
             </article>
         </section>
-        <div class="d-flex justify-content-center align-items-center">
-            <p>&copy 2026 ALL RIGHTS RESERVED</p>
-            <p> | </p>
-			<p>DEVELOPED BY OKO SVETA<p>
+        <div class="d-flex justify-content-center align-items-center gap-2">
+            <p>&copy 2026 ALL RIGHTS RESERVED | DEVELOPED BY TIJANA POPOVIĆ</p>
         </div>
     `;
     $("footer").html(html);
@@ -193,9 +191,9 @@ function renderAllOffers(destinations, element){
                     <h3 class="pt-3">${d.city}</h3>
                     <h4>${d.country}</h4>
                     <p class="fs-5 mt-3 mb-1">${cat.name} - ${d.days==1?`${d.days} dan`: `${d.days} dana`} </p>
-                    <p class="fs-5">Datum: ${mapDates}</p>
+                    <p class="fs-5 datesOffers">Datum: ${mapDates}</p>
                     <h4>${d.price} €</h4>
-                    <div class="addToFavourites fs-5" data-id="${d.id}">${addOrRemove}</div>
+                    <div class="addToFavourites fs-5 mt-2" data-id="${d.id}">${addOrRemove}</div>
                     <a href="details.html?id=${d.id}" target="_blank" class="text-white text-decoration-none d-inline-block pb-2 mt-2 fs-5">Detalji</a>
                 </div>
             </div>
@@ -271,7 +269,7 @@ function allFilters(){
         getDestination=getDestination.filter(d=>favourites.includes(d.id));
     }
 
-    if(getDestination==0){
+    if(getDestination.length==0){
         let html=`<h4>Nema rezultata</h4>`
         $("#allOffers").html(html);
         return;    
@@ -318,9 +316,13 @@ function addToFavourites(idFav, el){     //id destinacije prosleđujemo
 }
 
 $(document).on("click", ".addToFavourites", function(){
-    console.log("klik");
     let idFav=parseInt($(this).data("id"));
      addToFavourites(idFav, this);
+
+     if($("#offersIndex").length){
+            let topFour=destinations.slice(0,4);
+            renderAllOffers(topFour, "#offersIndex")
+        }
      allFilters();
 })
 
